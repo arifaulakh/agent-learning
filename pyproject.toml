@@ -1,0 +1,15 @@
+[project]
+name = "agents-from-scratch"
+version = "0.1.0"
+description = "Daily exercises for learning to build AI agents from scratch"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=1.3.0",
+    "openai>=1.40.0",
+    # "anthropic>=0.34.0",  # uncomment if using Anthropic instead
+    "python-dotenv>=1.2.3",
+]
+
+[tool.uv]
+dev-dependencies = []
