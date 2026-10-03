@@ -1,6 +1,6 @@
-# Agents from Scratch — Sept 2 → Dec 31
+# Agent Learning
 
-Daily exercises to learn agent fundamentals by building, not by copying frameworks.
+Learning to build AI agents from the ground up — no frameworks, raw API first.
 
 ## Setup
 
@@ -11,33 +11,26 @@ uv sync
 cp .env.example .env   # add your API key
 ```
 
-Run a day's exercise from its folder:
+Run from any module folder:
 
 ```bash
-cd day-01   # or day-02, day-03, day-04, …
+cd day-01   # day-02, day-03, day-04, …
 uv run python main.py
 ```
 
-Each day copies forward from the previous one so you can `diff` them and see what changed.
+Each `day-XX/` folder builds on the previous one. Use `diff` to see what changed.
 
-## How to use this repo
+## Progress
 
-- One folder per day: `day-01/`, `day-02/`, …
-- Each day has a `README.md` with goals, constraints, and a self-check.
-- **You write the code.** Stubs and TODOs only — no solutions.
-- Dependencies live in the root `pyproject.toml` (shared across all days).
+| Module | Focus |
+|--------|--------|
+| day-01 | Agent loop, one tool |
+| day-02 | Multiple tools |
+| day-03 | Structured tracing |
+| day-04 | Error handling |
 
-## Core progression (high level)
-
-| Phase | Focus |
-|-------|--------|
-| Week 1 | Agent loop, tools, traces, error handling |
-| Week 2 | Multi-step tasks, conversation state, evals |
-| ~Day 10 | Compare: rebuild same agent with OpenAI Agents SDK |
-| Week 3+ | Agents API, workflows, routing |
-
-## Sources worth bookmarking
+## References
 
 - [Anthropic — Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents)
 - [Anthropic Cookbook — basic workflows](https://github.com/anthropics/anthropic-cookbook/tree/main/patterns/agents)
-- [OpenAI — Agents SDK docs](https://openai.github.io/openai-agents-python/) (read *after* you build your own loop)
+- [OpenAI — Agents SDK docs](https://openai.github.io/openai-agents-python/)
